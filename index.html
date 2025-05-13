@@ -13,42 +13,109 @@
 <!--Início do corpo da página-->
 
 <body>
-<!--Cabeçalho com informações de perfil-->
- <header>
-    <img src="img/avatar-perfil.png" alt="avatar da fernanda" widht="150" height="150"
-    <p>Eu sou Fernanda </p>
-    <hl>Eu ensino Programação</hl>
-    <p>Sou Engenharia de Computação e Pedagoga. Ensino pensamento computacional usando HTML, CSS e JavaScript</p>
-    <p>Minhas habilidades:</p>
-    <u1>
-        <1i>HTML</1i>
-        <1i>CSS</1i>
-        <1i>JavaScript</1i>
-        <1i>scratch</1i>
-    </u1>
-</header>
-<!--Conteudo principal com a lista de projetos-->
-<main>
-    <h2>Meus projetos</h2>
-    <section>
-        <h3>projeto 1</h3>
-        <p>Minha Biblioteca: Uma Webpage Personalizada</p>
-    </section>
-    <section>
-         <h3>Projeto 2</h3>
-         <p>Decidindo o futuro: Uma jornada interativa sobre a Inteligência Artificial</p>
-    </section>
-    <section>
-         <h3>Projeto 3</h3>
-         <p>Explorando o Universo: Uma aventura interativa em astronomia com scratch</p>
-    </section>
-</main>
-<!--rodapé com informações de contato-->
-<footer>
-    <h2>entre em contato</h2>
-    <p>github: femascheti</p>
-    <p>© 2024 Fernanda Mascheti</p>
-</footer>    
+    <!--Cabeçalho com informações de perfil-->
+    <header>
+        <img src="img/avatar-perfil.png" alt="avatar da fernanda" widht="150" height="150" <p>Eu sou Fernanda </p>
+        <hl>Eu ensino Programação</hl>
+        <p>Sou Engenharia de Computação e Pedagoga. Ensino pensamento computacional usando HTML, CSS e JavaScript</p>
+        <p>Minhas habilidades:</p>
+        <u1>
+            <1i>HTML</1i>
+            <1i>CSS</1i>
+            <1i>JavaScript</1i>
+            <1i>scratch</1i>
+        </u1>
+    </header>
+    <!--Conteudo principal com a lista de projetos-->
+    <main>
+        <h2>Meus projetos</h2>
+        <section>
+            <h3>projeto 1</h3>
+            <p>Minha Biblioteca: Uma Webpage Personalizada</p>
+        </section>
+        <section>
+            <h3>Projeto 2</h3>
+            <p>Decidindo o futuro: Uma jornada interativa sobre a Inteligência Artificial</p>
+        </section>
+        <section>
+            <h3>Projeto 3</h3>
+            <p>Explorando o Universo: Uma aventura interativa em astronomia com scratch</p>
+        </section>
+    </main>
+    <!--rodapé com informações de contato-->
+    <footer>
+        <h2>entre em contato</h2>
+        <p>github: femascheti</p>
+        <p>© 2024 Fernanda Mascheti</p>
+    </footer>
 </body>
 
 </html>
+
+
+<!--Cabeçalho com informações de perfil-->
+<header class="container text-center mt-5">
+    <img src="img/avatar-perfil.png" class="rounded-circle" width="150" height="150" alt="avatar da fernanda">
+    <p class="lead">Eu sou fernanda_</p>
+    <h1>Eu ensino programação</h1>
+    <p>sou engenheira de computação e pedagoga...</p>
+    <p>minhas habilidades</p>
+    <div>
+        <!--Exibe uma habilidade como um selo visual-->
+        <span class="badge bg-secondary">HTML</span>
+        <!--Exibe uma habilidade como um selo visual-->
+        <span class="badge bg-secondary">CSS</span>
+        <!--Exibe uma habilidade como um selo visual-->
+        <span class="badge bg-secondary">JavaScript</span>
+        <!--Exibe uma habilidade como um selo visual-->
+        <span class="badge bg-secondary">Scratch</span>
+    </div>
+</header>
+
+
+<!--Conteúdo principal com a lista de protejos -->
+<main class="container mt-5">
+    <h2 class="text-center">meus projetos</h2>
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/projeto-1.png" class="card-img-top" alt="projeto 1">
+                <div class="card body">
+                    <h5 class="card-title">minha biblioteca</h5>
+                    <p class="card-text">página com livros favoritos estilizada com CSS.</p>
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modall">veja o
+                        projeto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">minha biblioteca</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>detalhes do projeto: HTML + CSS, layout de livros favoritos...</p>
+                <img src="img/projeto-1.png" class="img-fluid" alt="projeto 1">
+            </div>
+            <div class="modal-footer">
+                <a href="https://femascheti.github.io/minhas-leituras/">ver ao vivo</a>
+                <a href="https://github.com/femascheti/minhas-leituras">ver código</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Rodapé com informações de contato-->
+<footer class="container py-5 text- center">
+    <h2>entre em contato</h2>
+    <div>
+    <i class="bi bi-github"></i>
+    <a href="https://github.com/femascheti">git hub</a>
+    </div>
+    <p class="my-5"> 2024 fernanda mascheti</p>
+</footer>
